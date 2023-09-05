@@ -2,6 +2,14 @@
 
 ## Exercise 1 palindrome.
 
+## Explanation
+
+I selected this exercise because it seems fun to me and because it uses logic to determine and compare various positions of a piece of data and to be able to control changes depending on them, but at the same time handling other variables such as size and number of changes.
+
+To solve it, first I wanted the user or the person executing the code to be able to interact with the program and get excited doing different tests and cases. But controlling and managing the data you enter. Then compare the positions of the data by comparing a string and an inverse string comparing the positions and if necessary changing them if the number of changes allows it, these strings are traversed halfway since that is where the difference of these is. If the string happens to be a palindrome it will return it, if not, it will return -1.
+
+## Instructions
+
 To run the program you must have python on your system.
 
 Run `python --version` or `python3 --version` to check if you have python on your system.
