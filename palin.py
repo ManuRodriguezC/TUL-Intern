@@ -52,7 +52,7 @@ if changes < int(k):
         if string[left] != 9:
             string[left] = "9"
             string[right] = "9"
-            changes += 1
+            changes += 2
         left += 1
         right -= 1
 
