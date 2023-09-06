@@ -13,8 +13,8 @@ while int(n) < 0 or int(n) > 100000:
     n = input("The number must be greater than 0 and less than 100,000: ")
 
 k = input("Enter the number of the changes in the palindrome: ")
-while int(k) < 0 or int(n) > 100000:
-    n = input("The changes must be greater than 0 and less than 100,000: ")
+while int(k) < 0 or int(k) > 100000:
+    k = input("The changes must be greater than 0 and less than 100,000: ")
 
 s = input("Enter the palindrome in numbers: ")
 while int(n) != int(len(s)):
