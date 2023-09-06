@@ -4,9 +4,9 @@
 
 ## Explanation
 
-I selected this exercise because it seems fun to me and because it uses logic to determine and compare various positions of a piece of data and to be able to control changes depending on them, but at the same time handling other variables such as size and number of changes.
+I selected this exercise because I find it fun and because it uses logic to determine and compare various positions of a piece of data and be able to control the changes depending on them, but at the same time it handles other variables such as the size and number of changes. .
 
-To solve it, first I wanted the user or the person executing the code to be able to interact with the program and get excited doing different tests and cases. But controlling and managing the data you enter. Then compare the positions of the data by comparing a string and an inverse string comparing the positions and if necessary changing them if the number of changes allows it, these strings are traversed halfway since that is where the difference of these is. If the string happens to be a palindrome it will return it, if not, it will return -1.
+To fix it, I first wanted the user or person running the code to be able to interact with the program and get excited about doing different tests and cases. But controlling and managing the data you enter. It then compares the positions from left to right, finding which of these is the greatest number and changing it, in this way, to form the highest-numbered palindrome. In the case of unused changes remaining after forming the palindrome, it is traversed again to convert it to the largest number. If the string happens to be a palindrome, it will return it; if not, it will return -1.
 
 ## Instructions
 
@@ -55,4 +55,13 @@ Enter the number of digits in the palindrome: 7
 Enter the number of the changes in the palindrome:
 Enter the palindrome in numbers: 6325123
 -1
+```
+
+Greater number.
+
+```
+Enter the number of digits in the palindrome: 7
+Enter the number of the changes in the palindrome: 3   
+Enter the palindrome in numbers: 1234371
+9934399
 ```

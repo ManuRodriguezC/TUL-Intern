@@ -22,22 +22,41 @@ while int(n) != int(len(s)):
 
 # Convert the string to a list and a reverse copy to loop through them in time
 string = list(s)
-s_rev = list(s[::-1])
 changes = 0
-position = 0
+left = 0
+right = len(string) - 1
 
 # Loop through both lists halfway.
-while position < (int(n) / 2):
+while left < (int(n) / 2):
     """
     If there is a different value and the allowed changes have
     not been used, it changes them to be the same.
     """
-    if string[position] != s_rev[position] and changes < int(k):
-        s_rev[position] = string[position]
+    if string[left] != string[right] and changes < int(k):
+        if string[left] > string[right]:
+            string[right] = string[left]
+        else:
+            string[left] = string[right]
         changes += 1
-    position += 1
+    left += 1
+    right -= 1
+"""
+This condition seeks to change the palindrome so that it is the
+largest number in case it still contains possible changes.
+"""
+if changes < int(k):    
+    left = 0
+    right = len(string) - 1
+    while left < (int(n) / 2) and changes < int(k):
+        # If the value is different from 9 change it to 9
+        if string[left] != 9:
+            string[left] = "9"
+            string[right] = "9"
+            changes += 1
+        left += 1
+        right -= 1
 
-palin = "".join(s_rev)
+palin = "".join(string)
 # if it is a palindrome returnal palindrome is does not return -1
 if palin == palin[::-1]:
     print(palin)
