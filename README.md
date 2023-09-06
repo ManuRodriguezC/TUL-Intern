@@ -52,7 +52,7 @@ Failed
 
 ```
 Enter the number of digits in the palindrome: 7
-Enter the number of the changes in the palindrome:
+Enter the number of the changes in the palindrome: 1
 Enter the palindrome in numbers: 6325123
 -1
 ```
