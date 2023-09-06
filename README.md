@@ -63,5 +63,5 @@ Greater number.
 Enter the number of digits in the palindrome: 7
 Enter the number of the changes in the palindrome: 3   
 Enter the palindrome in numbers: 1234371
-9934399
+9734379
 ```
