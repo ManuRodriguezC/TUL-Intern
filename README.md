@@ -4,9 +4,12 @@
 
 ## Explanation
 
-I selected this exercise because I find it fun and because it uses logic to determine and compare various positions of a piece of data and be able to control the changes depending on them, but at the same time it handles other variables such as the size and number of changes. .
+### Why did I do it?
+I selected this exercise because I find it fun and because it uses logic to determine and compare various positions of a piece of data and be able to control the changes depending on them, but at the same time it handles other variables such as the size and number of changes, which will control if they can be changed. or not to do I think that managing data and knowing how to manipulate it is essential for any project.
 
-To fix it, I first wanted the user or person running the code to be able to interact with the program and get excited about doing different tests and cases. But controlling and managing the data you enter. It then compares the positions from left to right, finding which of these is the greatest number and changing it, in this way, to form the highest-numbered palindrome. In the case of unused changes remaining after forming the palindrome, it is traversed again to convert it to the largest number. If the string happens to be a palindrome, it will return it; if not, it will return -1.
+### As I did?
+To fix it, I first wanted the user or person running the code to be able to interact with the program and get excited about doing different tests and cases. But controlling and managing the data you enter. It then compares the left and right positions towards the center, comparing which is the greater number and changing it, in this way, to form the palindrome with the greater number. In the case that there are changes to be used after forming the palindrome, it is traversed again to convert it to a larger number, changing the positions by a 9.
+If the string happens to be a palindrome, it will be returned by the palindrome; if not, it will return -1.
 
 ## Instructions
 
@@ -42,26 +45,35 @@ Run `./palin.py`
 Successful
 
 ```
+----        Program palindrome        ----
+
 Enter the number of digits in the palindrome: 7
 Enter the number of the changes in the palindrome: 3
 Enter the palindrome in numbers: 6325123
+
 6325236
 ```
 
 Failed
 
 ```
+----        Program palindrome        ----
+
 Enter the number of digits in the palindrome: 7
 Enter the number of the changes in the palindrome: 1
 Enter the palindrome in numbers: 6325123
+
 -1
 ```
 
 Greater number.
 
 ```
+----        Program palindrome        ----
+
 Enter the number of digits in the palindrome: 7
 Enter the number of the changes in the palindrome: 3   
 Enter the palindrome in numbers: 1234371
+
 9734379
 ```
